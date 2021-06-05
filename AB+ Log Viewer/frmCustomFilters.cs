@@ -17,7 +17,6 @@ namespace AB__Log_Viewer
             InitializeComponent();
         }
         
-        
         private CustomFilter Selected
         {
             get
@@ -48,7 +47,6 @@ namespace AB__Log_Viewer
             chkBColor.Checked = sel.BackEnable;
 
             chkVisible.Checked = sel.Visible;
-
             chkEnabled.Checked = sel.Enabled;
         }
 

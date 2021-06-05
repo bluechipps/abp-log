@@ -12,8 +12,12 @@ namespace AB__Log_Viewer
     {
         public static Config Inst;
 
-
+        public bool showInfo;
+        public bool showDebug;
+        public bool showError;
         public string LogPath;
+        public int frmWidth;
+        public int frmHeight;
         public CustomFilter[] CustomFilters = new CustomFilter[0];
 
 
