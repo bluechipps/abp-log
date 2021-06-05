@@ -241,5 +241,17 @@ namespace AB__Log_Viewer
         {
             new frmCustomFilters().Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try {
+                if (File.Exists(Path.Combine(txtLogPath.Text, "log.txt")))
+                {
+                    File.WriteAllText(Path.Combine(txtLogPath.Text, "log.txt"), "");
+                }
+            }
+            catch(Exception ex) {
+            }
+        }
     }
 }
